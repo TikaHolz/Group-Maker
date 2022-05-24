@@ -4,10 +4,15 @@ import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-public class GroupMaker {
-	public static void main(String[] args) throws IOException {
+public class GroupMaker 
+{
+static ArrayList<String> studentL = new ArrayList<String>();;
+	public static void main(String[] args) throws IOException 
+		{
+		
 		Scanner myFile = new Scanner(new File("StudentGroupList.txt"));
-		ArrayList<String> studentL = new ArrayList<String>();
+		
+		display.numberOfGroups();
 		int counter = 0;
 		while(myFile.hasNext())
 			{
@@ -20,5 +25,6 @@ public class GroupMaker {
 			}
 		
 	}
+	
 
 }

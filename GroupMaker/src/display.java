@@ -1,4 +1,9 @@
+
+import java.util.ArrayList;
 import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 public class display
 	{
 public static int groupNumber = 0;
@@ -27,17 +32,33 @@ public static int groupSize = 0;
 			}
 		else if(sizeOrNumber == 3)
 			{
-			//print roster 
-			// finish when we have arraylist done
-			//for(int i = 0; i < arrayList.size; i++)
-				//{
-				//System.out.println(arrayList[i]);
-				//}
+			//prints array list
+		for(int i = 0; i < GroupMaker.studentL.size(); i++)
+				{
+				System.out.println(GroupMaker.studentL.get(i));
+				}
 			}
 		else
 			{
 			System.out.println("That is not an option. Please restart the program and try again");
 			}
 
+		}
+	public static void printOutGroups()
+		{
+		int groups = groupNumber;
+		System.out.println("Project One");
+		
+	
+		
+		
+		System.out.println("Project Two");
+		
+		
+		
+		
+		
+		
+		System.out.println("Project Three");
 		}
 	}
